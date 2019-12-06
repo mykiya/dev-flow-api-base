@@ -31,7 +31,7 @@ RUN curl -Lk -o $PHANTOMJS_ARCHIVE https://github.com/fgrehm/docker-phantomjs2/r
 
 # install msyh
 RUN apk --update add fontconfig \
-  && curl -L -o msyh.tar.bz2 http://gitlab.tenxcloud.com/public-space/files-sharing/raw/master/fonts/msyh/msyh.tar.bz2 \
+  && curl -L -o msyh.tar.bz2 https://github.com/mykiya/dev-flow-api-base/raw/master/msyh.tar.bz2 \
   && tar -xjf msyh.tar.bz2 && rm msyh.tar.bz2 \
   && mkdir -p /usr/share/fonts/msyh \
   && cp msyh.ttf /usr/share/fonts/msyh/ \
