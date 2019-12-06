@@ -18,7 +18,7 @@ ENV PHANTOMJS_ARCHIVE="phantomjs.tar.gz"
 RUN echo '@edge http://nl.alpinelinux.org/alpine/edge/main'>> /etc/apk/repositories \
 	&& apk --update add curl
 
-RUN curl -Lk -o $PHANTOMJS_ARCHIVE http://gitlab.tenxcloud.com/public-space/files-sharing/raw/master/phantomjs/dockerized-phantomjs.tar.gz \
+RUN curl -Lk -o $PHANTOMJS_ARCHIVE https://github.com/fgrehm/docker-phantomjs2/releases/download/v2.0.0-20150722/dockerized-phantomjs.tar.gz \
 	&& tar -xf $PHANTOMJS_ARCHIVE -C /tmp/ \
 	&& cp -R /tmp/etc/fonts /etc/ \
 	&& cp -R /tmp/lib/* /lib/ \
