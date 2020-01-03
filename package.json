@@ -50,6 +50,7 @@
     "pg": "^6.0.3",
     "pg-hstore": "^2.3.2",
     "phantomjs-prebuilt": "^2.1.16",
+    "pinyinlite": "^1.2.1",
     "promise-retry": "^1.1.1",
     "qn-scope": "^0.1.1",
     "raw-body": "^2.1.7",
